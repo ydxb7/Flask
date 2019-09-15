@@ -64,6 +64,9 @@
 
 这样，就能保持访问的是登录后的页面了。
 
+## DELETE a task
+curl http://localhost:5000/todos/todo2 -X DELETE -v
+
 ## 使用 -c 保存 Cookie
 当我们使用 cURL 访问页面的时候，默认是不会保存 Cookie 的。有些情况下我们希望保存 Cookie 以便下次访问时使用。例如登陆了某个网站，我们希望再次访问该网站时保持登陆的状态，这时就可以现将登陆时的 Cookie 保存起来，下次访问时再读取。
 
