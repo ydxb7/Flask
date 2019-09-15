@@ -30,6 +30,10 @@
 
 `curl -d "userName=tom&passwd=123456" -X POST http://www.example.com/login`
 
+`curl http://localhost:5000/todo1 -d "data=Remember the milk" -X PUT`
+
+`curl -d "data=Change my brakepads" -X PUT http://localhost:5000/todo2`
+
 在使用 -d 的情况下，如果省略 -X，则默认为 POST 方式：
 
 `curl -d "userName=tom&passwd=123456" http://www.example.com/login`
